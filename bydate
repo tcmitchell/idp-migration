@@ -1,0 +1,8 @@
+#!/bin/sh
+
+psql -U portal -h ch.geni.net portal -f bydate.sql
+
+echo "Total Migrated"
+echo "--------------"
+
+psql -U portal -h ch.geni.net portal -f count-migrated.sql

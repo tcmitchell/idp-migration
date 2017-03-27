@@ -1,0 +1,3 @@
+#!/bin/sh
+
+psql -A -t -U portal -h ch.geni.net portal -f migrated-email.sql
